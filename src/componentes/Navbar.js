@@ -12,10 +12,11 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <nav>
+
         <div onClick={abrirMenu} id="menu-hamburguer">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className={menuAtivo ? "tiro1" : ""}></span>
+          <span className={menuAtivo ? "tiro2" : ""}></span>
+          <span className={menuAtivo ? "tiro3" : ""}></span>
         </div>
       </nav>
       <section className={`menu ${menuAtivo ? "ativo" : ""}`}>
